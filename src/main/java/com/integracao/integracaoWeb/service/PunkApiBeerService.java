@@ -12,7 +12,19 @@ import java.util.List;
 public class PunkApiBeerService {
     private final PunkApiBeerClient punkApiBeerClient;
 
-    public List<PunkApiBeerResponse> getAllBeers(){
-        return   punkApiBeerClient.getAllBeers();
+    public List<PunkApiBeerResponse> getAllBeers() {
+        return punkApiBeerClient.getAllBeers();
+    }
+
+    public List<PunkApiBeerResponse> getBeersbyABVRange(int min, int max) {
+        return punkApiBeerClient.getBeersbyABVRange(min, max);
+    }
+
+    public List<PunkApiBeerResponse> getBeersbyIBURange(int min, int max) {
+        return punkApiBeerClient.getBeersbyIBURange(min, max);
+    }
+
+    public List<PunkApiBeerResponse> getBeersbyEBCRange(int min, int max) {
+        return punkApiBeerClient.getBeersbyEBCRange(min, max);
     }
 }

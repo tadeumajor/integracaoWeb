@@ -9,4 +9,5 @@ public class PunkApiBeerResponse {
     private String description;
     private long abv;
     private long ibu;
+    private long ebc;
 }
